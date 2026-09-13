@@ -1,0 +1,10 @@
+# Data (refetch/regenerate: scripts/download_copes.py + main.ipynb)
+data/
+# Python env
+.venv/
+__pycache__/
+# Notebooks / OS
+.ipynb_checkpoints/
+.DS_Store
+# Large caches
+*.pkl

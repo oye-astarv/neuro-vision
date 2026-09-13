@@ -1,0 +1,25 @@
+# ---- Core data I/O ----
+numpy<2            # PINNED: torch's numpy bridge breaks on numpy>=2 (see NOTES.md)
+scipy
+nibabel            # reads CIFTI .dscalar.nii (the COPE maps)
+pandas
+scikit-learn       # logistic-regression baseline (85%)
+
+# ---- Preprocessing / volumetric viz (optional, for nilearn route) ----
+nilearn
+neuromaps          # fsLR cortical surface mesh template
+
+# ---- Deep learning ----
+torch
+torchvision
+
+# ---- Explainability (XAI) ----
+captum
+
+# ---- Graph NN (cortical surface graph-CNN, later stage) ----
+torch-geometric
+
+# ---- 3D visualization ----
+vedo                # brain + skeleton rendering (Python)
+# Connectome Workbench is a separate binary (wb_command) for CIFTI surface viz,
+# installed separately, not via pip.
